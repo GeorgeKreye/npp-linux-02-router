@@ -30,9 +30,11 @@ $rtrA ip addr add 10.10.2.1/30 dev eth3
 
 $rtrB ip addr add 10.10.1.2/30 dev eth1
 $rtrB ip addr add 10.10.3.1/30 dev eth2
+$rtrB ip addr add 10.10.6.2/30 dev eth3
 
 $rtrC ip addr add 10.10.2.2/30 dev eth1
 $rtrC ip addr add 10.10.4.1/30 dev eth2
+$rtrC ip addr add 10.10.6.1/30 dev eth3
 
 $rtrD ip addr add 10.10.5.1/30 dev eth1
 $rtrD ip addr add 10.10.3.2/30 dev eth2
@@ -62,9 +64,11 @@ $rtrA ip addr del 10.10.2.1/30 dev eth3
 
 $rtrB ip addr del 10.10.1.2/30 dev eth1
 $rtrB ip addr del 10.10.2.1/30 dev eth2
+$rtrB ip addr del 10.10.6.2/30 dev eth3
 
 $rtrC ip addr del 10.10.2.2/30 dev eth1
 $rtrC ip addr del 10.10.4.1/30 dev eth2
+$rtrC ip addr del 10.10.6.1 dev eth3
 
 $rtrD ip addr del 10.10.5.1/30 dev eth1
 $rtrD ip addr del 10.10.3.2/30 dev eth2
@@ -72,9 +76,6 @@ $rtrD ip addr del 10.10.4.2/30 dev eth3
 
 
 }
-
-
-
 
 #echo "The number of arguments is: $#"
 #echo "arg1 = $1"
